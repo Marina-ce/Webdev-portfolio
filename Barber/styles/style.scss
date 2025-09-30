@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #9a623f;
+  --offcanvas-bg-color: #212529;
+  --bg-light: #d7dbd6;
+}
+
+.button {
+  background-color: var(--primary-color);
+  padding: .7rem 1.4rem;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+// header
+.web-header {
+  img {
+    width: 120px;
+  }
+
+  .navbar-toggler:hover {
+    background-color: var(--primary-color);
+
+    span {
+      filter: invert(1);
+    }
+  }
+
+  .offcanvas {
+    background-color: var(--offcanvas-bg-color);
+    color: white;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+// main
+main {
+  margin-block-start: 62.14px;
+}
+
+.section-welcome {
+  padding-block: 11rem;
+  background-image: 
+    linear-gradient(rgb(0 0 0 / 55%)),
+    url('../images/foto1.jpeg');
+  background-size: cover;  
+  background-position: left;
+  color: white;
+
+  @media (width >= 768px) {
+    padding-block: 16rem 3rem;
+
+    article {
+      row-gap: 6rem !important;
+    }
+
+    div {
+      padding-inline-end: 4.5rem;
+    }
+  }
+
+  img {
+    width: 200px;
+
+    @media (width >= 768px) {
+      margin-inline-start: 4.5rem;
+    }
+  }
+}
+
+.section-about {
+  background-color: var(--bg-light);
+  background-image: url("../images/logo2.png");
+  background-size: min(35%, 500px);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2 {
+    color: var(--primary-color);
+  }
+}
+
+.section-specialize {
+  .first-img {
+    height: 340px;
+
+    @media (width >= 1200px) {
+      height: 440px;
+    }
+  }
+
+  .text {
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
+    transform: translate(35px, -40px);
+
+    @media (width >= 1200px) {
+      transform: translate(50px, -60px);
+    }
+
+    article {
+      padding: 5rem 1rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+    }
+  }
+
+  .second-img {
+    transform: translate(-50px, -80px);
+
+    @media (width >= 1200px) {
+      transform: translate(-50px, -25px);
+    }
+    
+    img {
+      outline: 1px solid black;
+      outline-offset: 1rem;
+    }
+  }
+}
