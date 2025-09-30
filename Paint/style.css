@@ -1,0 +1,23 @@
+.section-1 {
+  background-image: url("./images/pic01.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-block: 16rem;
+}
+
+.section-2 {
+  img {
+    width: 100px;
+  }
+
+  .col {
+    min-width: 20rem;
+    max-width: 34.375rem;
+    margin-inline: auto;
+  }
+}
+
+.section-3 img {
+  height: 220px;
+  object-fit: cover;
+}
